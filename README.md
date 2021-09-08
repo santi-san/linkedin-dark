@@ -1,1 +1,48 @@
-# linkedin-dark
+#+STARTUP: nofold
+#+HTML: <div align="center">
+
+* Linkedin - Dark @version 1.0.12
+
+Complete dark and customizable theme for [[https://www.linkedin.com][Linkedin website]] with a few improvements and customizable options.
+
+
+[[https://raw.githubusercontent.com/santi-san/linkedin-dark/master/linkedin-dark.user.css][https://img.shields.io/badge/Install%20from-userstyles.world-116b59.svg?longCache=true&style=flat]]
+
+#+HTML: <img src="https://raw.githubusercontent.com/santi-san/linkedin-dark/master/img/preview.png" width="100%"/>
+
+#+HTML: </div>
+
+** Tested on: 
+- Argentina ~ linkedin.com
+
+
+** Features
+- Custom backgrounds colors
+- Custom texts colors
+- Custom links colors
+- Custom scrollbar color
+- Custom muted text (this option is using the color of "text-color" with opacity)
+
+** Installation
+You have to install the [[https://add0n.com/stylus.html][Stylus]] extension.
+
+You can go to: [[https://userstyles.world/style/][userstyles.world]] and install it from there.
+
+OR
+
+click on the install link below.
+
+[[https://raw.githubusercontent.com/santi-san/linkedin-dark/master/linkedin-dark.user.css][https://img.shields.io/badge/Install%20theme%20with-Stylus-116b59.svg]]
+
+** Contributions
+Any contribution is greatly appreciated.
+
+If you'd like to contribute code, please make sure to read the [[https://github.com/santi-san/linkedin-dark/blob/master/contributing.org][contribution
+guidelines]].
+
+If you really like this project and would like to tip me for my work, then you
+can:
+- Buy me a coffee over at [[https://ko-fi.com/satosan][ko-fi]]
+
+** License
+Code released under the [[license][MIT]] license.
