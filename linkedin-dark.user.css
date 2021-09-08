@@ -1,0 +1,153 @@
+/* ==UserStyle==
+@name           Mercadolibre Dark Mode
+@description    Dark and customizable theme for MercadoLibre, available for: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Dominicana, Ecuador, Guatemala, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, Salvador, Uruguay, Venezuela.
+@namespace      github.com//santi-san/linkedin-dark
+@homepageURL    https://github.com/santi-san/linkedin-dark
+@supportURL     https://github.com/santi-san/linkedin-dark/issues
+@updateURL      
+@author         santi  (https://github.com/santi-san)
+@version        0.0.1
+@license        MIT
+@preprocessor   stylus
+
+@var color      _bg-dark         'Primary bg color                      '   #22272e
+@var color      _bg-light        'Secondary bg color                    '   #2d333b
+@var color      _link-color      'Link color                            '   #e6bb5d 
+@var color      _text-color      'Text color                            '   #adbac7
+@var color      _price-color     'Price color                           '   #e6bb5d
+@var number     _muted           'muted text (use same color of text)   '   [0.7, 0, 1, 0.1]
+==/UserStyle== */
+
+@-moz-document domain("www.linkedin.com") {
+
+    
+     /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--GENERAL--------------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    * {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .feed-shared-update-v2 {
+    margin: 0 0 2rem;
+    }
+   
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BACKGROUND DARK------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    body,.feed-shared-inline-show-more-text .feed-shared-inline-show-more-text__see-more-less-toggle,.artdeco-button--muted.artdeco-button--tertiary:hover,.feed-identity-module__entity-list .entity-list-item.entity-list-item.entity-list-item a:hover,.feed-identity-module__anchored-widget:hover,.community-panel-interest-package__entity-link.community-panel-interest-package__entity-link:hover,.community-panel-interest-package__cta:hover,.share-box-feed-entry__trigger,.comments-post-meta__profile-link,.comments-comment-item-content-body, .comments-highlighted-comment-item-content-body, .comments-reply-item-content-body,.comments-comment-texteditor,.feed-shared-linkedin-video__large-cta-button.feed-shared-linkedin-video__large-cta-button,.comments-comments-list__show-previous-container:hover,.feed-shared-update-v2__description-wrapper + .feed-shared-update-v2__content,.artdeco-button--circle, .msg-connections-typeahead__search-results--expanded,.artdeco-modal,.share-creation-state,input.search-global-typeahead__input {
+        background: _bg-dark !important;
+    }
+    
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BACKGROUND LIGHT-----------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    .global-nav,.artdeco-card,.feed-index-sort-border,.comments-comments-list,.artdeco-dropdown__content,.social-details-first-prompt-block,.feed-shared-linkedin-video__description-container--learning,.msg-overlay-bubble-header--inverse,.msg-overlay-conversation-bubble,.msg-form__footer,.msg-connections-typeahead__top-fixed-section,.msg-connections-typeahead__search-result--highlighted,.msg-overlay-bubble-header:hover,.share-creation-state__footer,.artdeco-button--tertiary:focus, .artdeco-button--tertiary:hover {
+        background:  _bg-light !important;
+    }
+    
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BACKGROUND LINK------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .ui-vpp-discrete-bar__bar__interval--highlighted {
+        background: _link-color !important;
+    }
+    
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BACKGROUND OTHERS----------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    .andes-dropdown__popover {
+        background: transparent !important;
+    }
+    
+    .official-stores{
+        background-image: none !important;
+    }
+    
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--LINKS COLOR ---------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    a,.global-nav__primary-link--active, .global-nav__primary-link--active .global-nav__primary-link-text, .global-nav__primary-link--active:visited, a.global-nav__primary-link--active, a.global-nav__primary-link--active .global-nav__primary-link-text, a.global-nav__primary-link--active:visited,.global-nav__primary-link-text,.feed-identity-widget-item__stat,.feed-shared-social-action-bar .artdeco-button__text,.share-box-feed-entry-toolbar__item .artdeco-button__text,.global-footer__link, .artdeco-button--tertiary > span,.social-details-social-counts__item:not(:last-child):not(.social-details-social-counts__reactions--with-social-proof)::after,.feed-shared-entity__cta-button,.artdeco-button--2, a.global-nav__primary-link:hover .global-nav__primary-link-text { 
+        color: _link-color !important; 
+    }
+    
+    
+   
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--TEXT OPACITY (for mutted text) --------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    a:hover,.t-black--light,.global-footer__link,.msg-overlay-bubble-header:hover {
+        opacity: _muted;
+    }
+    
+    
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--TEXT COLOR-----------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    body,.t-black,.t-black--light,.community-panel-interest-package__header,.feed-shared-update-v2--minimal-padding .feed-shared-update-v2__commentary,.artdeco-button--muted.artdeco-button--tertiary,.large-header, .large-text, .medium-text, .small-text, blockquote, body, h1, h2, h3, h4, h5, p,linkedin-logo .logo-text,.comments-comment-box-comment__text-editor .ql-editor.ql-blank::after,.social-details-social-counts__item-text--view-count-text,input::placeholder,.share-creation-state__text-editor .ql-editor.ql-blank::before, .artdeco-entity-lockup__title {
+        color: _text-color !important; 
+    }
+    
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--OTHERS TEXT/ICONS COLORS--------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    path,polygon {
+        fill: _link-color !important; 
+    }
+    
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BORDER NONE--------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    .asd {
+        border: 0px solid red;
+    }
+    
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BORDER DARK---------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .feed-shared-header--with-divider,.feed-identity-module__anchored-widget,.share-box-feed-entry__trigger,.profile-rail-card__actor-meta,.comments-comment-social-bar__vertical-divider,.social-details-social-counts,.comments-comment-texteditor,.feed-shared-aggregated-content__list-item,.community-panel__discover-cta {
+        border-color: _bg-dark;
+    }
+    .asd {
+        background-color: _bg-dark;
+    }
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BORDER LIGHT--------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .asd {
+        border-color: _bg-light;
+    }
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BORDER LINK--------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .global-nav__primary-link--active::after, a.global-nav__primary-link--active::after,.global-nav__primary-link--active::after {
+         border-color: _link-color !important;
+    }
+    
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    /*--BORDER-OTHERS--------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .asd{
+        border-color: transparent;
+    }
+}
