@@ -1,12 +1,12 @@
 #+STARTUP: nofold
 #+HTML: <div align="center">
 
-* Linkedin - Dark @version 1.0.12
+* Linkedin - Dark @version 1.0.2
 
 Complete dark and customizable theme for [[https://www.linkedin.com][Linkedin website]] with a few improvements and customizable options.
 
 
-[[https://raw.githubusercontent.com/santi-san/linkedin-dark/master/linkedin-dark.user.css][https://img.shields.io/badge/Install%20from-userstyles.world-116b59.svg?longCache=true&style=flat]]
+[[https://userstyles.world/style/1018/linkedin-dark-mode][https://img.shields.io/badge/Install%20from-userstyles.world-116b59.svg?longCache=true&style=flat]]
 
 #+HTML: <img src="https://raw.githubusercontent.com/santi-san/linkedin-dark/master/img/preview.png" width="100%"/>
 
@@ -26,7 +26,7 @@ Complete dark and customizable theme for [[https://www.linkedin.com][Linkedin we
 ** Installation
 You have to install the [[https://add0n.com/stylus.html][Stylus]] extension.
 
-You can go to: [[https://userstyles.world/style/][userstyles.world]] and install it from there.
+You can go to: [[https://userstyles.world/style/1018/linkedin-dark-mode][userstyles.world]] and install it from there.
 
 OR
 
