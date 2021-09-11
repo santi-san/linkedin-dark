@@ -3,6 +3,7 @@
 
 * Linkedin - Dark @version 1.0.7
 
+
 Complete dark and customizable theme for [[https://www.linkedin.com][Linkedin website]] with a few improvements and customizable options.
 
 
