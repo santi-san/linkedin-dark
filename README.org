@@ -1,7 +1,7 @@
 #+STARTUP: nofold
 #+HTML: <div align="center">
 
-* Linkedin - Dark @version 1.1.1
+* Linkedin - Dark @version 1.1.2
 
 
 Complete dark and customizable theme for [[https://www.linkedin.com][Linkedin website]] with a few improvements and customizable options.

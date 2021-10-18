@@ -6,7 +6,7 @@
 @supportURL     https://github.com/santi-san/linkedin-dark/issues
 @updateURL      https://raw.githubusercontent.com/santi-san/linkedin-dark/master/linkedin-dark.user.css
 @author         santi  (https://github.com/santi-san)
-@version        1.1.1
+@version        1.1.2
 @license        MIT
 @preprocessor   stylus
 
@@ -147,7 +147,8 @@
   .feed-shared-linkedin-video__description-container,
   .jobs-unified-top-card__sticky-header,
   .org-similar-pages-carousel,
-  .feed-shared-update-v2--minimal-padding .feed-shared-article--with-no-image {
+  .feed-shared-update-v2--minimal-padding .feed-shared-article--with-no-image,
+  .feed-shared-poll {
     background: _bg-dark !important;
   }
 
@@ -265,7 +266,9 @@
   .global-footer-compact,
   .jobs-search-results,
   .scaffold-layout--reflow .nt-settings-summary,
-  .artdeco-toast-item {
+  .artdeco-toast-item,
+  .feed-shared-poll-option__bar-percent,
+  .comments-disabled-comments-block {
     background: _bg-light !important;
   }
 
