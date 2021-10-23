@@ -6,7 +6,7 @@
 @supportURL     https://github.com/santi-san/linkedin-dark/issues
 @updateURL      https://raw.githubusercontent.com/santi-san/linkedin-dark/master/linkedin-dark.user.css
 @author         santi  (https://github.com/santi-san)
-@version        1.1.3
+@version        1.1.4
 @license        MIT
 @preprocessor   stylus
 
@@ -18,35 +18,42 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.linkedin.com") {
-  /*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 /*--GENERAL--------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 * {
-  text-shadow: none !important;
-  box-shadow: none !important;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+* {
+text-shadow: none !important;
+box-shadow: none !important;
 }
 .feed-shared-update-v2 {
-  margin: 0 0 2rem;
+margin: 0 0 2rem;
 }
 .t-12.t-normal.t-black--light.job-card-container__footer-item {
-  padding: 4px 8px;
+padding: 4px 8px;
 }
 .social-details-social-counts__count-value,
 .t-12.t-normal.t-black--light.job-card-container__footer-item,
 .msg-content-preview__link.feed-container-theme.ember-view:hover,
 .feed-shared-inline-show-more-text .feed-shared-inline-show-more-text__see-more-less-toggle,
 .reusable-search-show-more-link.reusable-search-show-more-link {
-  opacity: 1;
+opacity: 1;
 }
 html {
-  scrollbar-color: _link-color _bg-light;
+scrollbar-color: _link-color _bg-light;
 }
 ::-webkit-scrollbar {
-  width: 0.5em;
+width: 0.5em;
 }
 
 * {
-  scrollbar-width: thin;
+scrollbar-width: thin;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -139,8 +146,8 @@ html.artdeco,
 .jobs-unified-top-card__sticky-header,
 .org-similar-pages-carousel,
 .feed-shared-update-v2--minimal-padding .feed-shared-article--with-no-image,
-.feed-shared-poll {
-  background: _bg-dark !important;
+.feed-shared-poll,.pv-detail-assessments__typeahead-search,.sar-report__horizontal-divider,.comments-post-meta__profile-info-wrapper,.feed-shared-external-video__meta,.nt-card-content__body--secondary,.comments-comment-reshare-prompt {
+background: _bg-dark !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -252,8 +259,8 @@ main#main.scaffold-layout__main > div > section,
 .scaffold-layout--reflow .nt-settings-summary,
 .artdeco-toast-item,
 .feed-shared-poll-option__bar-percent,
-.comments-disabled-comments-block {
-  background: _bg-light !important;
+.comments-disabled-comments-block,.pv-detail-assessments__standalone-wrapper,.sa-question-image-multichoice__item-v2, .sa-question-multichoice__item,.sa-assessment-quiz__feedback, .sa-assessment-quiz__response,.pv-skill-categories-section__expanded, .container-with-shadow,.jobs-list-feedback {
+background: _bg-light !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -261,7 +268,7 @@ main#main.scaffold-layout__main > div > section,
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .ui-vpp-discrete-bar__bar__interval--highlighted,
 .mt3.artdeco-button.artdeco-button--2.artdeco-button--secondary.ember-view {
-  background: _link-color !important;
+background: _link-color !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -269,20 +276,20 @@ main#main.scaffold-layout__main > div > section,
 /*----------------------------------------------------------------------------------------------------------*/
 .andes-dropdown__popover,
 .artdeco-button--circle.artdeco-button--1 {
-  background: transparent !important;
+background: transparent !important;
 }
 
 .official-stores {
-  background-image: none !important;
+background-image: none !important;
 }
 .jobs-description--is-truncated .jobs-description__container::after,
-.side-panel__scroll-affordance {
-  background: linear-gradient(0deg, #191c28, transparent 100%);
+.side-panel__scroll-affordance,.pv-detail-assessments__pill-carousel-button--right::before {
+background: linear-gradient(0deg, _bg-dark, transparent 100%);
 }
 .browse-library-carousel__card--disabled::after,
 .home-carousel-card--disabled.home-carousel-card--canvas::after,
 .home-carousel-card--disabled::after {
-  background: linear-gradient(to left, #191c28, transparent 100%);
+background: linear-gradient(to left, _bg-dark, transparent 100%);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -320,7 +327,7 @@ label.required::after,
 .global-footer__button,
 .relevance-filter__action,
 .job-seeker-skills__explore {
-  color: _link-color !important;
+color: _link-color !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -331,7 +338,7 @@ a:hover,
 .global-footer__link,
 .msg-overlay-bubble-header:hover,
 .global-nav__primary-link:hover .global-nav__primary-link-text:hover {
-  opacity: _muted;
+opacity: _muted;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -396,8 +403,8 @@ input[type="radio"]:checked + label,
 .artdeco-empty-state__headline,
 .artdeco-empty-state__message,
 .pab-featured-item__card-container,
-label {
-  color: _text-color !important;
+label,.artdeco-entity-lockup__metadata, .artdeco-entity-lockup__metadata li-icon {
+color: _text-color !important;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -405,14 +412,14 @@ label {
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 path,
 polygon {
-  fill: _link-color !important;
+fill: _link-color !important;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /*--BORDER NONE--------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 .asd {
-  border: 0px solid red;
+border: 0px solid red;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -453,11 +460,11 @@ hr.artdeco-divider,
 .global-nav__secondary-title,
 .global-nav__secondary-item--divider,
 .path-card,
-.job-seeker-skills__footer-container-skills-item-button {
-  border-color: _bg-dark !important;
+.job-seeker-skills__footer-container-skills-item-button,.sar-report__profile-card {
+border-color: _bg-dark !important;
 }
 .asd {
-  background-color: _bg-dark;
+background-color: _bg-dark;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -481,7 +488,7 @@ input[type="radio"]:hover + label:before,
 .browse-library-body__group-header,
 .global-footer,
 .jobs-search-results-list__header {
-  border-color: _bg-light !important;
+border-color: _bg-light !important;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -492,7 +499,7 @@ a.global-nav__primary-link--active::after,
 .global-nav__primary-link--active::after,
 .jobs-search__left-rail,
 .jobs-search-two-pane__pagination {
-  border-color: _link-color !important;
+border-color: _link-color !important;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
@@ -501,6 +508,6 @@ a.global-nav__primary-link--active::after,
 .scaffold-layout__detail.search-marvel-srp__content-detail-detail,
 .msg-conversations-container__convo-item-link.active,
 .nt-card--unread {
-  border-left: 5px solid #057642 !important;
+border-left: 5px solid #057642 !important;
 }
 }
